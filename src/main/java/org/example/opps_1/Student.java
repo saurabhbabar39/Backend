@@ -1,12 +1,21 @@
 package org.example.opps_1;
+
+import java.lang.management.ThreadInfo;
+
 public class Student {
-    int age;
+
+
+    protected int age;
     int psp;
     String name;
     public int mobNo;
     private String emailID;
     protected float marks;
 
+
+    public Student(int no){
+        this.mobNo = no;
+    }
     void changeBatch(){
         System.out.println("Changing Batch");
     }
@@ -30,12 +39,6 @@ public class Student {
         return emailID;
     }
 
-    public static class Testprotected extends Student {
-
-        public static void main(String[] args) {
-            Student s1 = new Student();
-        }
-    }
 }
 
 
